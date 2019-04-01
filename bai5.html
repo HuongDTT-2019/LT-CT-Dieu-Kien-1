@@ -1,10 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bai 5</title>
 </head>
 <body>
-$END$
+<p>Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</p>
+<label>Diem kiem tra</label>
+<input id="KT" type="text">
+<label >Diem giua ky</label>
+<input id="GK" type="text">
+<label >Diem cuoi ky</label>
+<input id="CK" type="text">
+<input type="submit" value="Xep loai" onclick="xepLoai();">
+<script>
+    function xepLoai(){
+        let diemKT=parseInt(document.getElementById('KT').value);
+        let diemGK=parseInt(document.getElementById('GK').value);
+        let diemCK=parseInt(document.getElementById('CK').value);
+        let TB=Math.round((diemKT+diemGK+diemCK)/3);
+        if(TB>=8){
+            alert("xep loai gioi");
+        }else if(TB>=6&&TB<8) {
+            alert("xep loai kha");
+        }
+        else if(TB>=4&&TB<6){
+            alert("xep loai trung binh");
+        }
+        else("xep loai yeu");
+    }
+
+</script>
 </body>
 </html>

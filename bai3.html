@@ -1,10 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bai 3</title>
 </head>
 <body>
-$END$
+<p>Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0</p>
 </body>
+<script>
+    let numRd=parseInt(prompt("nhap mot so bat ky"));
+    if(numRd>0){
+        alert(numRd+ 'lon hon 0');
+    }else if (numRd<0){
+        alert(numRd+'nho hon 0');
+    }
+    else
+        alert(numRd+'bang 0');
+
+</script>
 </html>

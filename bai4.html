@@ -1,10 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bai 4</title>
 </head>
 <body>
-$END$
+<p>Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó</p>
+<script>
+    let numA=parseInt(prompt("Nhap vao so a"));
+    let numB=parseInt(prompt("Nhap vao so b"));
+    let numC=parseInt(prompt("Nhap vao so C"));
+        if(numA>numB&&numA>numC){
+            alert(numA+' la so lon nhat');
+        }else if(numB>numA&&numB>numC){
+            alert(numB+' la so lon nhat');
+        }else
+            alert(numC+'la so lon nhat');
+</script>
 </body>
 </html>

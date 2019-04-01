@@ -1,10 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bai7</title>
 </head>
 <body>
-$END$
+<p>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</p>
+<label >Nhap thoi gian dam thoai theo phut</label>
+<input id="time" type="text">
+<input type="submit" value="tong tien" onclick="resultMn();">
+<div id="result"></div>
+<script>
+    let result=null;
+    function  resultMn() {
+        let time = parseInt(document.getElementById('time').value);
+        if(time>100){
+           result=(100*2000)+(time-100)*1500;
+           document.getElementById('result').innerHTML="Tien cuoc dien thoai la: "+ result;
+
+        }else
+        result=time*2000;
+        document.getElementById('result').innerHTML="Tien cuoc dien thoai la: "+ result;
+    }
+
+</script>
 </body>
 </html>
